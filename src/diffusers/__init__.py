@@ -652,6 +652,7 @@ else:
             "WuerstchenDecoderPipeline",
             "WuerstchenPriorPipeline",
             "ZImageImg2ImgPipeline",
+            "ZImageInpaintPipeline",
             "ZImagePipeline",
         ]
     )
@@ -1340,6 +1341,7 @@ if TYPE_CHECKING or DIFFUSERS_SLOW_IMPORT:
             WuerstchenDecoderPipeline,
             WuerstchenPriorPipeline,
             ZImageImg2ImgPipeline,
+            ZImageInpaintPipeline,
             ZImagePipeline,
         )
 

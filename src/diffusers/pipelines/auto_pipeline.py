@@ -119,7 +119,7 @@ from .stable_diffusion_xl import (
 )
 from .wan import WanImageToVideoPipeline, WanPipeline, WanVideoToVideoPipeline
 from .wuerstchen import WuerstchenCombinedPipeline, WuerstchenDecoderPipeline
-from .z_image import ZImageImg2ImgPipeline
+from .z_image import ZImageImg2ImgPipeline, ZImageInpaintPipeline
 
 
 AUTO_TEXT2IMAGE_PIPELINES_MAPPING = OrderedDict(
@@ -214,6 +214,7 @@ AUTO_INPAINT_PIPELINES_MAPPING = OrderedDict(
         ("stable-diffusion-pag", StableDiffusionPAGInpaintPipeline),
         ("qwenimage", QwenImageInpaintPipeline),
         ("qwenimage-edit", QwenImageEditInpaintPipeline),
+        ("z-image", ZImageInpaintPipeline),
     ]
 )
 
